@@ -886,18 +886,18 @@
     <div class="main">
       <div class="topbar"><div class="tb-dot" style="background:#FF5F57"></div><div class="tb-dot" style="background:#FFBD2E"></div><div class="tb-dot" style="background:#28C840"></div><span class="tb-title">build-step-2.md</span><span class="tb-phase ph-1">phase 1</span></div>
       <div class="content centered">
-        <div class="slide-title">Build Step 2: Create Header Component<span class="cursor"></span></div>
-        <div class="slide-sub" style="margin-bottom:18px">Goal: extract the header section into its own reusable component file.</div>
-        <div class="teaching-cue">You are turning part of a static page into a reusable React component without changing what the user sees.</div>
+        <div class="slide-title">Build Step 2: Complete Header Component<span class="cursor"></span></div>
+        <div class="slide-sub" style="margin-bottom:18px">Goal: link the pre-styled Header component and render it in your app.</div>
+        <div class="teaching-cue">We pre-wrote the CSS classes in a static layout so you don't have to spend time formatting HTML.</div>
         <div class="card build-card">
           <div class="build-tag">Build Step 2</div>
           <div class="build-steps">
-            <div class="build-step-row"><div class="build-step-number">1</div><div class="build-step-content">Create a new file named:<div class="code-row">Workshop_Buildalong_Starter/src/components/Header.jsx</div></div></div>
-            <div class="build-step-row"><div class="build-step-number">2</div><div class="build-step-content">Move the header JSX into a component function named <span class="code-pill">Header()</span>.</div></div>
-            <div class="build-step-row"><div class="build-step-number">3</div><div class="build-step-content">Export it from the file.</div></div>
-            <div class="build-step-row"><div class="build-step-number">4</div><div class="build-step-content">Open <span class="code-pill">Workshop_Buildalong_Starter/src/App.jsx</span>, import it, and render <span class="code-pill">&lt;Header /&gt;</span>.</div></div>
+            <div class="build-step-row"><div class="build-step-number">1</div><div class="build-step-content">Open the file: <div class="code-row">Workshop_Buildalong_Starter/src/components/Header.jsx</div></div></div>
+            <div class="build-step-row"><div class="build-step-number">2</div><div class="build-step-content">Review the pre-written layout and classes. Notice that counts are currently static numbers.</div></div>
+            <div class="build-step-row"><div class="build-step-number">3</div><div class="build-step-content">Open <span class="code-pill">Workshop_Buildalong_Starter/src/App.jsx</span>.</div></div>
+            <div class="build-step-row"><div class="build-step-number">4</div><div class="build-step-content">Import <span class="code-pill">Header</span> and render <span class="code-pill">&lt;Header /&gt;</span> above the main content.</div></div>
           </div>
-          <div class="goal"><strong>What you should see:</strong> the same header still appears. <strong>Checkpoint:</strong> it now comes from <span class="code-pill">Header.jsx</span>.</div>
+          <div class="goal"><strong>What you should see:</strong> the styled header appears at the top. <strong>Checkpoint:</strong> it displays static values for now.</div>
         </div>
       </div>
     </div>
@@ -948,13 +948,13 @@
         <div class="card build-card">
           <div class="build-tag">Build Step 3</div>
           <div class="build-steps">
-            <div class="build-step-row"><div class="build-step-number">1</div><div class="build-step-content">Create a new file named:<div class="code-row">Workshop_Buildalong_Starter/src/components/TaskCard.jsx</div></div></div>
-            <div class="build-step-row"><div class="build-step-number">2</div><div class="build-step-content">Define <span class="code-pill">TaskCard</span> to accept a <span class="code-pill">title</span> prop.</div></div>
-            <div class="build-step-row"><div class="build-step-number">3</div><div class="build-step-content">Open <span class="code-pill">Workshop_Buildalong_Starter/src/App.jsx</span> and render <span class="code-pill">&lt;TaskCard /&gt;</span> multiple times with different titles.</div></div>
+            <div class="build-step-row"><div class="build-step-number">1</div><div class="build-step-content">Open the file: <div class="code-row">Workshop_Buildalong_Starter/src/components/TaskCard.jsx</div></div></div>
+            <div class="build-step-row"><div class="build-step-number">2</div><div class="build-step-content">Update <span class="code-pill">TaskCard({ title })</span> to accept the title prop, and replace <code>"Sample Task Title"</code> with <code>{title}</code> in the HTML paragraph.</div></div>
+            <div class="build-step-row"><div class="build-step-number">3</div><div class="build-step-content">Open <span class="code-pill">Workshop_Buildalong_Starter/src/App.jsx</span>, import <span class="code-pill">TaskCard</span>, and render it multiple times with different titles.</div></div>
           </div>
           <div class="explain amber" style="margin-top:14px">
             <div class="explain-title">What you should see</div>
-            <p>Several cards show different titles but share the same structure. <strong>Checkpoint:</strong> changing a title prop changes only that card’s displayed data.</p>
+            <p>Several cards show different titles but share the same structure and actions. <strong>Checkpoint:</strong> changing a title prop changes only that card’s displayed data.</p>
           </div>
         </div>
       </div>
@@ -1069,8 +1069,8 @@
               <p>The handler has three jobs: reject blank input after <code>trim()</code>, add a task in a fresh array, then clear the input.</p>
             </div>
             <div class="card">
-              <div class="card-h" style="color:var(--green)">Create AddTaskForm.jsx</div>
-              <p class="card-p">Create <code>src/components/AddTaskForm.jsx</code>. Accept <code>value</code>, <code>onChange</code>, and <code>onAdd</code>. Render an input using <code>onChange={(e) => onChange(e.target.value)}</code> and a button triggering <code>onAdd</code>.</p>
+              <div class="card-h" style="color:var(--green)">Complete AddTaskForm.jsx</div>
+              <p class="card-p">Open <code>src/components/AddTaskForm.jsx</code>. Accept <code>value</code>, <code>onChange</code>, and <code>onAdd</code>. Update the input to use <code>onChange={(e) => onChange(e.target.value)}</code> and the button to trigger <code>onAdd</code>.</p>
               <div class="feature-list" style="margin-top:8px">
                 <div class="feature-pill"><span>value</span>comes from newTask</div>
                 <div class="feature-pill"><span>onChange</span>calls setNewTask</div>
