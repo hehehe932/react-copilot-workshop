@@ -10,3 +10,13 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Instructor & Redundant Files (kept locally, ignored on GitHub)
+/Starter Project/
+/gdsc-react-copilot-polished.html
+/CHALLENGE_GUIDE.md
+/COPILOT_CHEATSHEET.md
+/backup/
+/Instructor Solution/
+/Workshop_Buildalong_Solution/
+/GDSC_UTP_Workshop_Complete_Slide_Script.md
