@@ -331,47 +331,7 @@ These work well for Tier 3 features.
 
 ---
 
-## 🤖 BEYOND AUTOCOMPLETE: CO-PILOT AGENT MODE & WORKFLOWS
-
-VS Code + GitHub Copilot has evolved from standard code autocompletions to a full **Coding Agent** that can execute complex, multi-step operations. Here are the tools and features you should know:
-
-### 1. Copilot Agent Mode (`@workspace /agent`)
-Instead of generating single lines, Agent Mode scans your active files and folders, plans changes, modifies multiple files at once, runs local scripts, and self-corrects based on compiler errors.
-*   **How to trigger:** Open the Copilot Chat Panel (Sidebar) and toggle **Agent Mode** on, or prepend `@workspace /agent` to your query.
-*   **Try this prompt:**
-    > `@workspace Analyze this React project, check for any CSS class inconsistencies, and list them with recommended fixes.`
-
-### 2. Browser Control & MCP Tools
-Using the Model Context Protocol (MCP), Copilot can plug into local environment interfaces like database connectors or browser automation frameworks (e.g. Playwright). This allows the agent to open a local page, click UI buttons, verify features, and capture screenshots.
-*   **Try this prompt:**
-    > `Open http://localhost:5173 in the browser, test the Add Task and Delete buttons, and report any failures.`
-
-### 3. Project-Wide Instructions (`.github/copilot-instructions.md`)
-You can define specific coding rules, styles, framework version guidelines, and naming conventions globally. Copilot automatically parses this file on every chat prompt or inline autocomplete request in the repo.
-*   **Example content:**
-    ```markdown
-    Always use functional components in React.
-    Keep state mutations immutable using array methods like map/filter/spread.
-    Explain changes in simple, beginner-friendly terms.
-    ```
-
-### 4. Code & PR Review Agent
-You can ask Copilot to review code or pull requests directly, either locally or within GitHub.com. It reads your changes and suggests optimizations for performance, styling, or bug fixes.
-*   **Try this prompt:**
-    ```txt
-    Review this TaskCard component and suggest optimizations for rendering performance.
-    ```
-
-### 5. Git Commit Sparkle
-In the VS Code Source Control panel, after staging your files, click the **Sparkle (generate commit message)** icon in the commit text area. Copilot will automatically analyze your code changes and write a descriptive, standardized commit message.
-
-### 6. Cloud Tasks & TODOs
-If you write a comment beginning with `// TODO:`, VS Code provides a Code Action to delegate it to a Copilot Cloud Agent. The agent runs in a secure cloud environment, completes the task, tests it, and opens a GitHub Pull Request for you.
-
----
-
 ## Quick Reference — Keyboard Shortcuts
-
 
 | Action | Windows | Mac |
 |--------|---------|-----|
